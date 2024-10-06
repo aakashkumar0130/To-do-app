@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const loadTodos = () => {
         const todos = JSON.parse(localStorage.getItem('todos')) || [];
-        todos.forEach(todo => addTodoToDOM(todo));
+        todos.forEach(todo => addTodoToDOM(todo));   // for rendrering to do's at the start of the project
     };
+
 
     const addTodoToDOM = (todo) => {
         const li = document.createElement('li');
